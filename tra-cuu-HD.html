@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einvoice.vn | Phần mềm h&#243;a đơn điện tử Th&#225;i Sơn</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/site.css" rel="stylesheet"/>
+    <link href="assets/css/flexslider.css" rel="stylesheet"/>
+    <link href="assets/css/headers/header-default.css" rel="stylesheet"/>
+    <link href="assets/css/footers/footer-default.css" rel="stylesheet"/>
+    <link href="assets/css/footers/footer-v1.css" rel="stylesheet"/>
+    <link href="assets/css/app.css" rel="stylesheet"/>
+    <link href="assets/css/lightbox/prettyPhoto.css" rel="stylesheet"/>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <link href="assets/css/bootstrapValidator.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.ico">
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/bootstrapValidator.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />\
+    
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="assets/js/BSS.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--=== Header ===-->
+        <div class="header">
+            <!-- Navbar -->
+            <div role="navigation" class="navbar navbar-default mega-menu">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button data-target=".navbar-responsive-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">
+                            <img width="80" alt="" src="assets/images/logoHoaDon.png" id="logo-header">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav main-menu">
+                            <li class="">
+                                <a href="hoa-don-dien-tu.html">
+                                    Hóa đơn điện tử
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="tinh-nang.html">
+                                    Tính năng
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="tra-cuu-HD.html">
+                                    Tra cứu HĐ
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="bao-gia.html">
+                                    Báo giá
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="dang-ky-dai-ly.html">
+                                    Đăng ký đại lý
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="huong-dan.html">
+                                    Hướng dẫn
+                                </a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="#">
+                                            Tải về
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                         Phần mềm tiện ích
+                                     </a>
+                                     </li>
+                                     <li>
+                                        <a href="#">
+                                            Video hướng dẫn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="tin-tuc.html">
+                                    Tin tức
+                                </a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="#">
+                                            Văn bản hóa đơn điện tử
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Tin tức hóa đơn điện tử
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="lien-he.html">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/navbar-collapse-->
+        </div>
+
+        <form method="post" action="https://van.ehoadon.vn/TCHD" id="form1" enctype="multipart/form-data">
+        <div class="panel-default body-lookup" >
+            <div id="content">
+
+                <script type="text/javascript">
+                    var Popup = {
+                        ViewInvoice: { Name: "ViewInvoice", Title: "Tra cứu Hóa đơn", Width: 1050, Height: 750, ScrollingType: "no", Url: "/Lookup", FnCallbackOpen: function () { ShowHideBanner(true); ChangeBannerPosition(); }, ShowPopup: ShowPopup, ClosePopup: ClosePopup },
+                    }
+                    function ViewInvoice(guid) {
+                        ShowHideBanner(false);
+                        Popup.ViewInvoice.ShowPopup(guid, "?InvoiceGUID=" + guid);
+                    }
+
+                    function ChangeBannerPosition() {
+                        var dialogLeft = $(".ui-dialog").css("left");
+                        $("#ifrBanner").css("left", dialogLeft);
+                    }
+
+                    var $popoverbtnSearch;
+                    $(document).ready(function () {
+                        var contentSupport = "<div class='divTooltip'>"
+                            + "<ul class='ulTooltip'>"
+                            + "<li><a href=\"https://ehoadon.vn/hoi-dap\" target=\"_blank\">Hóa đơn điện tử là gì</a></li>"
+                            + "<li><a href=\"https://ehoadon.vn/van-ban\" target=\"_blank\">Thông tư, Quyết định về Hóa đơn Điện tử</a></li>"
+                            + "<li><a href=\"https://ehoadon.vn/hoi-dap\" target=\"_blank\">Câu hỏi thường gặp về hóa đơn điện tử</a></li>"
+                            + "</ul></div>";
+                        CreatePopover($('#imgSupport'), contentSupport, "right");
+
+                        $("#btnUpoadXML").hide();
+                        $("#imgMTC").hide();
+
+                        $popoverbtnSearch = $('#popover-btnSearch');
+                        CreatePopover($('#popover-btnSearch'), "", "bottom");
+
+                        $('#txtInvoiceCode').keyup(function () {
+                            UpdateUI();
+                        }).change(function () {
+                            UpdateUI();
+                        });
+
+                        $('#imgXML').mouseover(function () {
+                            $('#imgXML').attr("src", "img/SearchXML_Act.png");
+                        }).mouseout(function () {
+                            $('#imgXML').attr("src", "img/SearchXML.png");
+                        });
+
+                        $('#imgMTC').mouseover(function () {
+                            $('#imgMTC').attr("src", "img/SearchMTC_Act.png");
+                        }).mouseout(function () {
+                            $('#imgMTC').attr("src", "img/SearchMTC.png");
+                        });
+
+                        $('#imgXML').click(function () {
+                            $("#hdfIsXML").val("true");
+                            $('#txtInvoiceCode').val("");
+                            UpdateUI();
+                        });
+
+                        $('#imgMTC').click(function () {
+                            $("#hdfIsXML").val("false");
+                            $('#txtInvoiceCode').val("");
+                            UpdateUI();
+                        });
+
+                        $('#fuXMLUpload').change(function () {
+                            GetFile();
+                        });
+
+                        UpdateUI();
+                    });
+
+                    function UpdateUI() {
+                        var IsXML = $("#hdfIsXML").val() == "true";
+                        var MTC = $('#txtInvoiceCode').val();
+                        if (MTC == undefined) MTC = '';
+                        if (MTC == '') text = IsXML ? "Bạn chưa chọn File XML" : "rỗng";
+                        var ok = MTC != "";
+                        var contentTooltipUserName = "Mã tra cứu Hóa đơn là mã tự động do hệ thống Bkav eHoaDon tạo và gửi cho người mua <br>thông qua tin nhắn SMS hoặc Email, dùng để tra cứu thông tin Hóa đơn Điện tử.<br>Mã tra cứu là 1 dãy ký tự chỉ gồm chữ hoặc số, không phân biệt chữ hoa, thường. </br>Ví dụ: <b>Q1W4DYAM9</b>.";
+
+                        if (IsXML) {
+                            contentTooltipUserName = "File XML là file được ký và gửi từ hệ thống Bkav eHoadon";
+                            $("#btnUpoadXML").show();
+                            $("#imgMTC").show();
+                            $("#imgXML").hide();
+
+                            $("#txtInvoiceCode").attr("placeholder", "Chọn File Hóa đơn định dạng XML");
+                            $("#btnSearch").val("Đọc file XML");
+                        }
+                        else {
+
+                            $("#btnUpoadXML").hide();
+                            $("#imgMTC").hide();
+                            $("#imgXML").show();
+
+                            $("#txtInvoiceCode").attr("placeholder", "Nhập Mã tra cứu Hóa đơn");
+                            $("#btnSearch").val("Tra cứu");
+
+                            ok = MTC.length >= 6 && MTC.length <= 15;
+                            if (MTC == '') MTC = "rỗng";
+                            var text = "là <b>" + MTC + "</b>";
+                            text = "Mã tra cứu phải từ 6 đến 15 ký tự. Bạn không thể Tra cứu với Mã tra cứu " + text;
+                        }
+
+                        CreatePopover($('#txtInvoiceCode'), contentTooltipUserName, "bottom");
+                        CreatePopover($("#imgXML"), "Bấm vào đây để chuyển sang Tra cứu Hóa đơn bằng File XML", "bottom");
+                        CreatePopover($("#imgMTC"), "Bấm vào đây để chuyển sang Tra cứu Hóa đơn bằng Mã tra cứu", "bottom");
+                        Popover_DisabledButton('btnSearch', !ok, text, 'button-container');
+
+                        var note = "<b>Ghi chú</b>: Khi bấm vào <span class='spanblue'>tại đây</span>, hệ thống sẽ chuyển sang trang đăng nhập của hệ thống Bkav eHoadon tại địa chỉ <a class='spanblue' style='cursor:pointer' onclick='Login()' >https://van.ehoadon.vn</a>";
+                        note += "<br><br>Bạn đăng nhập bằng USB Token của Doanh nghiệp/tổ chức mình, hoặc đăng nhập bằng tài khoản do Bkav đã tạo và cấp cho Doanh nghiệp/tổ chức của mình.";
+                        note += "<br><br>Sau khi đăng nhập thành công, bạn có thể xem, tra cứu, thống kê tất cả Hóa đơn đầu vào của Doanh nghiệp/tổ chức của mình.";
+                        note += "<br><br>Nếu cần thêm sự trợ giúp, bạn vui lòng bấm vào 1 trong 2 link sau để chat với Bkav: ";
+                        note += "<a class='spanblue' style = 'cursor:pointer' onclick = 'initChatFB()' > chat Facebook</a> hoặc <a class='spanblue' style = 'cursor:pointer' onclick = 'InitPluginZalo(true)' >chat Zalo</a>.";
+
+                        CreatePopover($(".spInfo"), note, "bottom");
+
+                        InitPopover();
+                    }
+
+                    function GetFile() {
+                        var files = $("#fuXMLUpload")[0].files;
+
+                        var allowFileExtension = ".xml";
+                        if (files.length > 0) {
+                            var sumSize = 0;
+                            var sumSizeAllow = 30 * 1024 * 1024;
+                            var fileName = files[0].name;
+                            var fileExtension = fileName.substr(fileName.lastIndexOf('.'));
+
+                            if (fileExtension != allowFileExtension) {
+                                bkav_alert_warning("<div>Định dạng File không đúng. Bạn phải chọn File định dạng XML.</div>");
+                                return;
+                            }
+
+                            var fileSize = files[0].size;
+                            if (fileSize > sumSizeAllow) {
+                                bkav_alert_warning("File <b>" + files[i].name + "</b> có dung lượng <b>" + GetSizeName(fileSize) + "</b>. Bạn không được chọn file có dung lượng lớn hơn <b>30 MB</b>.");
+                                return;
+                            }
+
+                            $("#hdfFileLastModifiedDate").val(FormatDateTime(files[0].lastModifiedDate, "dd/MM/yyyy HH:mm:ss"));
+                            $("#txtInvoiceCode").val(fileName);
+                            $("#hdfIsXML").val("true");
+
+                            UpdateUI();
+                        }
+                    }
+
+                    function Login() {
+                        window.location.href = window.location.origin;
+                    }
+                </script>
+                <table style="width: 100%; margin-top: 146px;">
+                    <tr>
+                        <td class="TCHD">Tra cứu Hóa đơn Điện tử                           
+                            <img style="cursor: pointer" id="imgSupport" data-toggle="popover" src="assets/images/CauChamHoi.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div class="input-group">
+                                <div class="divInvoiceCode">
+                                    <input name="ctl00$ContentPlaceHolder1$txtInvoiceCode" type="text" maxlength="20" id="txtInvoiceCode" tabindex="2" class="form-control" placeholder="Nhập Mã tra cứu Hóa đơn" onkeypress="return InputLimiter(event,&#39;09az&#39;)" data-toggle="popover" />
+                                    <input type="file" name="ctl00$ContentPlaceHolder1$fuXMLUpload" id="fuXMLUpload" class="hidden" accept="text/xml" multiple="false" data-buttonText="Chọn file" />
+                                    <img src="assets/images/SearchXML.png" class="SearchXML" id="imgXML" />
+                                    <img src="assets/images/SearchMTC.png" class="SearchXML" id="imgMTC" />
+                                </div>
+                                <div class="input-group-btn">
+                                    <label id="btnUpoadXML" for="fuXMLUpload" class="btn btn-primary btnUpoadXML">Chọn file</label>
+                                    <span id="button-container">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="Tra cứu" id="btnSearch" class="btn btn-primary btnSearch" />
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="ContentPlaceHolder1_BESReCaptcha" align="center" class="g-recaptcha center" data-sitekey="6LddSB4UAAAAAO2Ig9ZHpTMxue0dDpnodo3OYjUH" data-theme="light" style="display: none">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="note">Lưu ý: Bạn cũng có thể xem, tra cứu, thống kê tất cả Hóa đơn đầu vào của Doanh nghiệp mình <a onclick="Login()" style="cursor: pointer; color: blue; text-decoration: underline">tại đây</a><span class="spInfo">
+                            &nbsp;<img src="assets/images/info_note.png" /></span></td>
+                    </tr>
+                </table>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfFileLastModifiedDate" id="hdfFileLastModifiedDate" />
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdfIsXML" id="hdfIsXML" value="false" />
+
+            </div>
+
+        <!--=== Footer Version 1 ===-->
+        <footer class="opportunitie-footer" id="bizapp-footer">
+            <div class="container">
+                <div class="l_top">
+                    <div class="col-xs-12 col-sm-3 col-md-4">
+                        <li class="e-heading" style="margin-left: 0;"> 
+                            YÊU CẦU TƯ VẤN
+                        </li>
+                        <form id="inquiry_form_id" role="form" class="inquiry_form">
+                            <div class="contact-title">Chúng tôi sẵn sàng phục vụ, vui lòng điền đầy đủ thông tin bên dưới đây:</div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Điện Thoại:</label>
+                                <input type="text" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 10px">
+                                <label for="message">Lời Nhắn:</label>
+                                <input type="text" class="form-control" id="message" name="message">
+                            </div>
+                            <button type="submit" class="btn btn-primary submit">GỬI YÊU CẦU</button>
+                        </form>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 col-md-2">
+                        <ul>
+                            <li class="e-heading"> Trợ Giúp</li>
+                            <div class="li-block">
+                                <li><a href="/forum/tro-giup-1">Hỏi đáp</a></li>
+                                <li><a href="/page/huong-dan/">Tài liệu hướng dẫn</a></li>
+                                <li><a href="/page/videos/">Videos</a></li>
+                                <li><a href="/blog">Chia sẻ</a></li>
+                            </div>
+                            <li class="e-heading">Về chúng tôi</li>
+                            <div class="li-block">
+                                <li><a href="/page/gioi-thieu">Giới thiệu</a></li>
+                                <li><a href="/page/bang-gia">Bảng giá</a></li>
+                                <li><a href="/khach-hang-cua-chung-toi">Khách hàng</a></li>
+                                <li><a href="/page/tuyen-dung">Tuyển dụng</a></li>
+                                <li><a href="/page/contactus">Liên hệ</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-2 col-md-2">
+                        <ul>
+                            <li class="e-heading">ĐỐI TÁC</li>
+                            <div class="li-block">
+                                <li><a href="/page/hop-tac/">Lời mời hợp tác</a></li>
+                                <li><a href="/tim-doi-tac/">Tìm đối tác</a></li>
+                            </div>
+                            <li class="e-heading">PHIÊN BẢN MOBILE</li>
+                            <div class="li-block">
+                                <li><a href="https://play.google.com/store/apps/details?id=com.odoo.mobile&amp;hl=vi">Android</a></li>
+                                <li><a href="https://itunes.apple.com/us/app/odoo/id1272543640?mt=8">IOS</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-4 bg_footer">
+                        <ul>
+                            <li class="e-heading">
+                                <font class="text-white" style="">Liên Hệ</font>
+                            </li>
+                          <li>
+                            <div class="info-line-left">
+                              <i class="fa fa-map-marker text-gray-lighter" aria-hidden="true" style=""></i>
+                            </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter">Văn phòng chính</font>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-left">
+                                </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter">Nhà 8, Công viên phần mềm Quang Trung, Quận 12, TP Hồ Chí Minh</font>
+                            </div>
+                          </li>
+                          <li>
+                            <hr>
+                          </li>
+                          <li>
+                            <div class="info-line-left">
+                              <i class="fa fa-phone text-gray-lighter" aria-hidden="true" style=""></i>
+                            </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter" style="">Tổng đài hỗ trợ:&nbsp;</font>
+                              <font class="text-gray-lighter" style="">+84 28 37 15 07 81</font>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-left">
+                              <i class="fa fa-globe text-gray-lighter" aria-hidden="true" style=""></i>
+                            </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter" style="">Email:&nbsp;</font>
+                              <a class="active" href="mailto:support@bizapps.vn">
+                                <font class="text-gray" style="color:#2c85dd">support@bizapps.vn</font>
+                              </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-left">
+                              <i class="fa fa-tablet text-gray-lighter" aria-hidden="true" style=""></i>
+                            </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter" style="">Số hotline ngoài giờ: 0909 511 451</font>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-left">
+                                </div>
+                            <div class="info-line-right">
+                              <font class="text-gray-lighter">Tổng đài hỗ trợ hoạt động từ: 8h00 đến 18h00 hàng ngày, 7 ngày trong tuần</font>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-right" style="display: flex; float: left;">
+                              <a href="https://www.youtube.com/channel/UCnDZdC8pikbQZDcQ6K5tyVw" style="padding-right:10px;"><i class="fa fa-youtube text-gray-lighter" aria-hidden="true" style=""></i>
+                                                Youtube
+                                                </a>
+                              <a href="https://www.facebook.com/bizappsvn" style="padding-right:10px;"><i class="fa fa-facebook-official text-gray-lighter" aria-hidden="true"></i>
+                                                Facebook
+                                            </a>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="info-line-right" style="display: flex; float: left;">
+                              <a href="https://www.linkedin.com/company/bizapps-vietnam/" style="padding-right:10px;"><i class="fa fa-lg fa-linkedin-square text-gray-lighter" aria-hidden="true"></i>
+                                                Linkedin
+                                            </a>
+                              <a href="https://twitter.com/bizappscompany/" style="padding-right:10px;"><i class="fa fa-lg fa-twitter-square text-gray-lighter" aria-hidden="true"></i>
+                                                Twitter
+                                            </a>
+                            </div>
+                          </li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+              <div class="container-fluid" id="footer-bottom" style="margin-top:50px;">
+                <div class="container">
+                  <div class="row">
+                    <div class="footer">
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-left">
+                        <ul class="list-inline pull-left">
+                          <li>Copyright © 2018 Bizapps. All Right Reserved</li>
+                          <li>
+                            <a href="/page/chinh-sach-bao-mat">Điều khoản và chính sách</a>
+                          </li>
+                          <li>
+                            <a href="/page/quy-dinh">Quy Định</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="gi-gradient-line"></i>
+              </div>
+        </footer>
+        <!--=== End Footer Version 1 ===-->
+    </div>
+
+    <div id="share-buttons" class="hidden-xs">
+        <!-- Facebook -->
+        <a href="http://www.facebook.com/sharer.php?u=http://einvoice.vn" target="_blank"><img src="assets/images/shareface.png" alt="Facebook" /></a>
+        <!-- Twitter -->
+        <a href="http://twitter.com/share?url=http://einvoice.vn" target="_blank"><img src="assets/images/sharetweet.png" alt="Twitter" /></a>
+        <!-- Google+ -->
+        <a href="https://plus.google.com/share?url=http://einvoice.vn" target="_blank"><img src="assets/images/sharegoogle.png" alt="Google" /></a>
+        <!-- LinkedIn -->
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://einvoice.vn" target="_blank"><img src="assets/images/sharelinkedin.png" alt="LinkedIn" /></a>
+    </div> 
+    <script src="Scripts/respond.js"></script>
+
+    <script src="Scripts/jquery-migrate.js"></script>
+    <script src="Scripts/back-to-top.js"></script>
+    <script src="Scripts/modernizr.js"></script>
+    <script src="Scripts/jquery.cslider.js"></script>
+    <script src="Scripts/jquery.flexslider-min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/custom.js"></script>
+    <script src="Scripts/parallax-slider.js"></script>
+    <script src="Scripts/jquery.prettyPhoto.js"></script>
+    <script src="Scripts/site.js"></script>
+</body>
+</html>
