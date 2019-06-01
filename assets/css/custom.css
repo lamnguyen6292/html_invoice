@@ -1,0 +1,18 @@
+.sub_menu{
+	display: none;
+	width: 170px;
+	list-style: none;
+	padding-left: 0;
+	position: absolute;
+	/*top: 47px;*/
+	background: #fff;
+}
+.main-menu li {
+	position: relative;
+}
+.main-menu li:hover .sub_menu {
+	display: block;
+}
+a, a:hover {
+	text-decoration: none !important;
+}
