@@ -34,6 +34,7 @@ a, a:hover {
 }
 .header .navbar-nav {
 	margin-top: 30px;
+	padding-bottom: 0;
 }
 .sub_menu a {
 	display: block;
@@ -545,4 +546,120 @@ hr {
 .spanblue {
     color: blue;
     text-decoration: underline;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+.price-page .home-price .price-box-padding-first {
+    padding: 0;
+    z-index: 1;
+}
+.new-col-md-1, .new-col-md-2, .new-col-md-3, .new-col-md-4, .new-col-md-5, .new-col-md-6, .new-col-md-7, .new-col-md-8, .new-col-md-9, .new-col-md-10, .new-col-md-11, .new-col-md-12, .new-col-md-13, .new-col-md-14, .new-col-md-15, .new-col-md-16, .new-col-md-17, .new-col-md-18, .new-col-md-19, .new-col-md-20, .new-col-md-21, .new-col-md-22, .new-col-md-23, .new-col-md-24 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 980px){
+	.new-col-md-1, .new-col-md-2, .new-col-md-3, .new-col-md-4, .new-col-md-5, .new-col-md-6, .new-col-md-7, .new-col-md-8, .new-col-md-9, .new-col-md-10, .new-col-md-11, .new-col-md-12, .new-col-md-13, .new-col-md-14, .new-col-md-15, .new-col-md-16, .new-col-md-17, .new-col-md-18, .new-col-md-19, .new-col-md-20, .new-col-md-21, .new-col-md-22, .new-col-md-23, .new-col-md-24 {
+	    float: left;
+	}
+	.new-col-md-offset-3 {
+    	margin-left: 12.5%;
+	}
+	.new-col-md-6 {
+	    width: 25%;
+	}
+	.new-col-md-24 {
+	    width: 100%;
+	}
+	.new-col-md-13 {
+	    width: 54.16666667%;
+	}
+	.new-col-md-offset-4 {
+	    margin-left: 16.66666667%;
+	}
+	.new-col-md-8 {
+	    width: 33.33333333%;
+	}
+	.new-col-md-6 {
+	    width: 25%;
+	}
+}
+
+#dang-ky-ngay {
+    background: url(../images/hoa-don-dien-tu-footer.jpg) center;
+    background-size: cover;
+}
+#dang-ky-ngay .bg {
+    background: rgba(0, 0, 0, 0.74);
+    padding: 40px 0;
+}
+#dang-ky-ngay .bg h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    text-align: center;
+}
+#dang-ky-ngay .bg p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+.bd .line-color {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background: #ddd none repeat scroll 0 0;
+    height: 1px;
+    width: 35%;
+}
+.bd .line-color label {
+    width: 30%;
+    border-top: 2px solid #f2742e;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+}
+#dang-ky-ngay .bg h4 {
+    color: #ffffff;
+}
+#formDangkyDoanhnghiep h4, #formDangkyCanhan h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#dang-ky-ngay .bg input {
+    margin-top: 5px;
+}
+#formDangkyDoanhnghiep input {
+    font-size: 15px;
+}
+#formDangkyDoanhnghiep button {
+    margin: 0 auto;
+    display: block;
+}
+.btn-warning {
+    background: #f2742e;
+    color: #ffffff;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+#dang-ky-ngay .bg p.cskh {
+    font-size: 16px;
+}
+#dang-ky-ngay .bg p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+#formDangkyCanhan {
+	text-align: center;
 }

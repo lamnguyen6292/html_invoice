@@ -1,15 +1,4 @@
-﻿jQuery.ajax({
-    async: false,
-    type: 'GET',
-    url: "/js/loading/loadingoverlay.js",
-    data: null,
-    success: undefined,
-    dataType: 'script',
-    error: function (xhr, textStatus, errorThrown) {
-        // Look at the `textStatus` and/or `errorThrown` properties.
-        bkav_alert_error('Có lỗi xảy ra. Xin vui lòng thử lại sau hoặc thông báo với quản trị (Error: ' + textStatus + ').', 800);
-    }
-});
+﻿
 
 //.done(function (script, textStatus) {
 //    

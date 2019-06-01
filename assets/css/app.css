@@ -1,8 +1,6 @@
 ﻿/*Reset Styles
 ------------------------------------*/
-* {
-   border-radius: 0 !important;
-}
+
 
 a,
 a:focus, 
@@ -505,10 +503,6 @@ h3.title-v3-xs {
   box-shadow: none;
 }
 
-.form-control:focus {
-  border-color: #bbb;
-  box-shadow: 0 0 2px #c9c9c9;
-}
 
 /*Form Spacing*/
 .form-spacing .form-control {
