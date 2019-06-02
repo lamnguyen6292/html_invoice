@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/robotomedium.eot');
+    src: url('../fonts/robotomedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/robotomedium.woff2') format('woff2'),
+        url('../fonts/robotomedium.woff') format('woff'),
+        url('../fonts/robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 .sub_menu{
 	display: none;
 	width: 170px;
@@ -7,6 +17,9 @@
 	/*top: 47px;*/
 	background: #fff;
 }
+.price-page .home-price-title {
+	padding-bottom: 0;
+}
 .main-menu li {
 	position: relative;
 }
@@ -14,6 +27,9 @@
 	display: block;
 	    border: 1px solid #e0e0e0;
     border-top: none;
+}
+.price-page .other-product-header {
+    font-size: 28px;
 }
 a, a:hover {
 	text-decoration: none !important;
@@ -31,10 +47,21 @@ a, a:hover {
 }
 .header {
 	padding-top: 2px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+.home-introduce-img {
+    box-shadow: none !important;
+    background: transparent !important;
 }
 .header .navbar-nav {
-	margin-top: 30px;
+	margin-top: 17px;
 	padding-bottom: 0;
+}
+.header .navbar-default .navbar-nav > li > a {
+	font-size: 14px;
+	padding-bottom: 21px;
 }
 .sub_menu a {
 	display: block;
@@ -53,6 +80,8 @@ a, a:hover {
 #bizapp-footer {
     padding: 80px 0 10px 0;
     background: #212330;
+    z-index: 99999;
+    position: relative;
 }
 .e-heading {
     color: #fff;
@@ -802,7 +831,7 @@ ul {
     margin-top: 15px;
 }
 .suggest_block {
-	width: 292px;
+	width: 262px;
 }
 label {
     color: #999;
@@ -813,8 +842,12 @@ hr {
 .clients, .flexslider.home {
     border: 0;
     overflow: hidden;
-        margin-top: 10px !important;
-    background: none !important;
+    margin-top: 10px !important;
+    background: #fff !important;
+    box-shadow: none;
+    margin-bottom: 0;
+    background: #fff;
+    padding-bottom: 30px;
 }
 .header .navbar-default .navbar-nav > li:hover > a {
     color: #e3821d;
