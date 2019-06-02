@@ -663,3 +663,106 @@ hr {
 #formDangkyCanhan {
 	text-align: center;
 }
+.side-bar .list-news-thumb {
+    padding-bottom: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+.side-bar .list-news-thumb li {
+    margin-bottom: 15px;
+}
+.side-bar .list-news-thumb li .img-thumb {
+    width: 70px;
+    height: 50px;
+    float: left;
+}
+.side-bar .list-news-thumb li .img-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side-bar .list-news-thumb li .info-thumb {
+    float: left;
+    width: calc(100% - 80px);
+    padding-left: 10px;
+}
+.side-bar .list-news-thumb li .info-thumb h5 {
+    margin-top: 0;
+}
+.side-bar .list-news-thumb li .info-thumb h5 a {
+    font-size: 13px;
+    display: block;
+    text-align: justify;
+    text-decoration: none;
+}
+.lpdr .h {
+    font-size: 20px;
+    color: #5392a4;
+    text-align: center;
+    padding-top: 10px;
+    height: 45px;
+}
+.lpdr .l {
+    border: solid 1px #ebebeb;
+        width: calc(50% - 9px);
+    float: left;
+    margin-right: 18px;
+    margin-bottom: 14px;
+    text-align: center;
+    border-radius: 5px;
+    height: 44px;
+    line-height: 44px;
+    overflow: hidden;
+    list-style: none;
+}
+.lpdr .l:nth-of-type(even) {
+  margin-right: 0;
+  float: right;
+}
+ul {
+	list-style: none;
+}
+.lpdr .u1 {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.lpdr .l a {
+    color: #5392a4;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cl {
+    clear: both;
+}
+.lpdr .u2 {
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    font-weight: bold;
+}
+.lpdr .l1 {
+    font-size: 30px;
+    padding: 10px;
+    color: #ff4414;
+}
+.lpdr .l2 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #5392a4;
+    font-weight: bold;
+}
+.suggest_block .send-request{
+    background: #f07f34;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    padding: 13px 0 10px 0;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.suggest_block {
+	width: 292px;
+}
