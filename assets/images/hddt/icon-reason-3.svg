@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="66" viewBox="0 0 67 66">
+  <defs>
+    <filter id="Ellipse_508" x="1" y="0" width="66" height="66" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#0780e9" flood-opacity="0.698"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="LD_3" data-name="LD 3" transform="translate(-573 -3555)">
+    <g id="Group_14069" data-name="Group 14069" transform="translate(258 187)">
+      <g transform="matrix(1, 0, 0, 1, 315, 3368)" filter="url(#Ellipse_508)">
+        <circle id="Ellipse_508-2" data-name="Ellipse 508" cx="24" cy="24" r="24" transform="translate(8 8)" fill="#0877bb"/>
+      </g>
+      <g id="ic_DoiMatKhau_24" transform="translate(322 2914)">
+        <g id="Group_571" transform="translate(13 474.2)">
+          <circle id="Ellipse_54" cx="4.2" cy="4.2" r="4.2" stroke-width="1.5" transform="translate(3 8.1)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+          <line id="Line_3804" x2="9.5" stroke-width="1.5" transform="translate(11.5 12.3)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+          <line id="Line_3805" y2="2.1" stroke-width="1.5" transform="translate(21 12.3)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+          <line id="Line_3806" y2="2.1" stroke-width="1.5" transform="translate(17.8 12.3)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+        </g>
+        <rect id="Rectangle_566" width="24" height="24" transform="translate(13 474)" fill="none"/>
+      </g>
+    </g>
+    <rect id="Rectangle_8746" data-name="Rectangle 8746" width="64" height="64" transform="translate(573 3555)" fill="none"/>
+  </g>
+</svg>
