@@ -106,11 +106,11 @@ a, a:hover {
     border: none;
     line-height: 35px;
 }
-.btn-primary {
+/*.btn-primary {
     color: white;
     background-color: #0785dd !important;
     border-color: #0785dd !important;
-}
+}*/
 #bizapp-footer a {
     color: #999;
     font-size: 14px;
@@ -501,7 +501,7 @@ hr {
 }
 
 .TCHD {
-    color: rgb(25, 103, 178);
+    color: #e3821d;
     font-size: 60px;
 }
 
@@ -765,4 +765,104 @@ ul {
 }
 .suggest_block {
 	width: 292px;
+}
+label {
+    color: #999;
+}
+hr {
+    margin: 30px 0;
+}
+.clients, .flexslider.home {
+    border: 0;
+    overflow: hidden;
+        margin-top: 10px !important;
+    background: none !important;
+}
+.header .navbar-default .navbar-nav > li:hover > a {
+    color: #e3821d;
+}
+.header .navbar-default .navbar-nav > li > a:hover, .header .navbar-default .navbar-nav > .active > a {
+    border-bottom: solid 2px #e3821d;
+}
+a {
+	color: #e3821d;
+}
+a:hover {
+	color: #72c02c;
+}
+.btn-u {
+	background: #e3821d;
+}
+.btn-u:hover {
+background: #72c02c;	
+}
+.headline h2, .headline h3, .headline h4 {
+    border-bottom: 2px solid #e3821d;
+}
+.thumbnail h3 a:hover, .thumbnail-style h3 a:hover {
+    color: #e3821d;
+}
+#bizapp-footer a:hover {
+	color: #fff;
+}
+.thumbnail-style a.btn-more {
+    background: #e3821d;
+}
+.price-page .price-service .btn-buy-now {
+	background: #e3821d !important;
+}
+.price-page .price-service .btn-buy-now:hover {
+	background: #72c02c !important;
+}
+.price-box-second {
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to bottom,#0877bb,#19abc9) !important;
+    background: -moz-linear-gradient(top,#f17f34,#fbb385) !important;
+    background: -o-linear-gradient(top,#f17f34,#fbb385) !important;
+    background: -webkit-linear-gradient(top,#f17f34,#fbb385) !important;
+    padding: 0 5px;
+    z-index: 2;
+    transition: all .2s .2s linear;
+}
+.price-box-first, .price-box-third{
+    border-top: solid 1px #f17f34 !important;
+    border-bottom: solid 1px #f17f34 !important;
+    border-left: solid 1px #f17f34 !important;
+}
+.box-first-title, .box-third-title {
+    color: #f17f34 !important;
+    border-bottom: solid 2px #f17f34 !important;
+}
+.box-first-content .content-number-invoice, .box-first-content .content-number, .box-first-content .content-unit, .box-first-content .price-btn-buy-now,
+ .box-third-content .content-number-invoice,.box-third-content .content-number, .box-third-content .content-unit, .box-third-content .price-btn-buy-now,
+ .price-page .price-questions .more-less{
+	color: #e3821d !important;
+}
+.box-first-content .content-number, .box-third-content .content-number {
+    border-top: solid 1px #e3821d !important;
+    border-bottom: solid 1px #e3821d !important;
+}
+.box-first-content .price-btn-buy-now, .box-third-content .price-btn-buy-now{
+    border: solid 1px #e3821d !important;
+}
+.box-first-content .price-btn-buy-now:hover,.box-third-content .price-btn-buy-now:hover {
+	background: #e3821d;
+	color: #fff !important;
+}
+.price-box-third {
+    border-right: solid 1px #f17f34 !important;
+}
+.price-page .price-questions .panel.panel-default {
+	border: solid 1px #f17f34 !important;
+}
+.btn-warning, .btn-primary {
+	background: #f17f34 !important;
+}
+.btn-warning:hover, .btn-primary:hover {
+	background: #72c02c !important;	
+	/*border: 1px solid #72c02c;*/
+}
+.btn-primary {
+	border: transparent !important;
 }
