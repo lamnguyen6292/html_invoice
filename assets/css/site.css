@@ -130,23 +130,14 @@ a:hover { color: #72c02c; text-decoration: underline; }
 ------------------------------------*/
 .wrapper { background: #fff; }
 
-.boxed-layout { padding: 0; box-shadow: 0 0 5px #ccc; margin-left: auto !important; margin-right: auto !important; background: url(../images/patterns/15.html) repeat; }
-
 /*Parallax Counter
 ------------------------------------*/
-.parallax-bg { background: url(../images/blur/img1.html) 50% 0 repeat fixed; }
-
-/*Parallax Counter Block*/
-.parallax-counter { padding: 60px 0; background: url(../images/bg/9.html) 50% 0 no-repeat fixed; }
-
 .parallax-counter h4 { color: #fff; font-size: 18px; }
 
 .parallax-counter .counters { color: #fff; padding: 20px 0; font-weight: 200; background: rgba(0,0,0,0.6); }
 
 /*Parallax Counter v1
 ------------------------------------*/
-/*Parallax Counter Block*/
-.parallax-counter-v1 { padding: 60px 0; background: url(../images/patterns/5.html) repeat fixed; }
 
 .parallax-counter-v1 .counters { color: #fff; padding: 15px 0 10px; border: solid 1px #555; }
 
@@ -154,9 +145,6 @@ a:hover { color: #72c02c; text-decoration: underline; }
 
 .parallax-counter-v1 span.counter { font-size: 42px; line-height: 48px; }
 
-/*Parallax Counter v2
-------------------------------------*/
-.parallax-counter-v2 { position: relative; padding: 80px 0 60px; background: url(../images/patterns/16.html) repeat fixed; }
 
 .parallax-counter-v2:after { top: 0; left: 50%; content: " "; margin-left: -25px; position: absolute; border-top: 25px solid #fff; border-left: 25px solid transparent; border-right: 25px solid transparent; }
 
@@ -174,10 +162,6 @@ a:hover { color: #72c02c; text-decoration: underline; }
 @media (max-width: 992px) {
     .parallax-counter-v2 .counters { margin-bottom: 0 !important; }
 }
-
-/*Parallax Team
-------------------------------------*/
-.parallax-team { background: url(../images/team/faces.html) 50% 0 repeat fixed; }
 
 .parallax-team,
 .parallax-team .title-box-v2 { position: relative; }
@@ -813,9 +797,6 @@ ul.labels-demo li { list-style: none; display: inline-block; margin: 0 5px 2px 0
 .banner-info.light h3 { color: #fff; }
 .banner-info.light p { color: #eee; }
 
-/*Breadcrumb-V2*/
-.breadcrumbs-v2 { text-align: center; position: relative; background: url(../images/bg/11.html) no-repeat center; }
-
 .breadcrumbs-v2-in { padding: 60px 0; position: relative; }
 
 .breadcrumbs-v2 h1 { color: #fff; text-transform: uppercase; }
@@ -1024,10 +1005,6 @@ img.img-mouse { width: 150px; height: auto; margin: 0 auto 60px; }
 .project-details strong { min-width: 100px; display: inline-block; }
 
 .project-details a { text-decoration: underline; }
-
-/*Bootstrap Testimonials
-------------------------------------*/
-.testimonials-bs { padding: 50px 0; background: url(../images/bg/16.html) 50% 0 repeat fixed; }
 
 .testimonials-bs .headline-center-v2 span.author { color: #777; font-size: 14px; }
 
