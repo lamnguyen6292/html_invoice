@@ -39,8 +39,13 @@
 
     .background-homebanner-second .banner-title-second {
     
-        font-size: 42px;
+        font-size: 48px;
         line-height: 52px;
+    }
+
+    .background-homebanner-second .banner-sub-second {
+        font-size: 18px;
+        margin-top: 20px;
     }
 
     .background-homebanner-seco 
@@ -253,7 +258,10 @@
 }
 
 .home-page .home-banner-qr-code-image-right {
-    float: left;
+    /* float: left; */
+    vertical-align: super;
+    float: none;
+    display: inline-block;
 }
 
     .home-page .home-banner-qr-code-image-right img {
@@ -1514,9 +1522,9 @@
     margin-top: 15px;
     background: #FFF;
     padding: 0 5px;
-    border-top: solid 1px transparent;
+ /*   border-top: solid 1px transparent;
     border-bottom: solid 1px transparent;
-    border-left: solid 1px transparent;
+    border-left: solid 1px transparent;*/
     z-index: 1;
     transition: all 0.2s 0.2s linear;
 }
@@ -1733,9 +1741,9 @@
     margin-top: 15px;
     background: #FFF;
     padding: 0 5px;
-    border-top: solid 1px transparent;
+/*    border-top: solid 1px transparent;
     border-bottom: solid 1px transparent;
-    border-right: solid 1px transparent;
+    border-right: solid 1px transparent;*/
     z-index: 1;
     transition: all 0.2s 0.2s linear;
 }

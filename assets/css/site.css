@@ -198,7 +198,7 @@ a:hover { color: #72c02c; text-decoration: underline; }
 .service .desc { padding: 2px 0px; overflow: hidden; }
 .service .desc h4 { font-size: 19px; line-height: 28px; margin-top: 6px; }
 
-.service .service-icon { float: left; padding: 10px; color: #72c02c; font-size: 25px; text-align: center; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.service .service-icon { float: left; padding: 10px; color: #0877BB; font-size: 25px; text-align: center; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
 .service .service-icon.icon-cogs { font-size: 37px; }
 .service .service-icon.icon-plane { font-size: 43px; }
 

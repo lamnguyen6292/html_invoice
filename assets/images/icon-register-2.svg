@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15123" data-name="Rectangle 15123" width="50" height="50" transform="translate(1534 3726)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.45"/>
+    </clipPath>
+    <filter id="Ellipse_1" x="-3" y="-1.482" width="56" height="55.849" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#0780e9" flood-opacity="0.698"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_2" data-name="2" transform="translate(-1534 -3726)" clip-path="url(#clip-path)">
+    <g id="Group_25888" data-name="Group 25888" transform="translate(1052 -149)">
+      <g transform="matrix(1, 0, 0, 1, 482, 3875)" filter="url(#Ellipse_1)">
+        <path id="Ellipse_1-2" data-name="Ellipse 1" d="M16,0A15.924,15.924,0,1,1,0,15.924,15.962,15.962,0,0,1,16,0Z" transform="translate(9 7.52)" fill="#148dc4"/>
+      </g>
+      <text id="_2-2" data-name="2" transform="translate(501 3905)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="2" font-size="20" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">2</tspan></text>
+    </g>
+  </g>
+</svg>
