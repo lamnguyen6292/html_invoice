@@ -602,6 +602,18 @@ hr {
 }
 
 @media (min-width: 980px){
+    .new-col-md-offset-12 {
+        margin-left: 50%;
+    }
+    .new-col-md-14 {
+    width: 58.33333333%;
+}
+.new-col-md-10 {
+    width: 41.66666667%;
+}
+    .new-col-md-12 {
+        width: 50%;
+    }
 	.new-col-md-1, .new-col-md-2, .new-col-md-3, .new-col-md-4, .new-col-md-5, .new-col-md-6, .new-col-md-7, .new-col-md-8, .new-col-md-9, .new-col-md-10, .new-col-md-11, .new-col-md-12, .new-col-md-13, .new-col-md-14, .new-col-md-15, .new-col-md-16, .new-col-md-17, .new-col-md-18, .new-col-md-19, .new-col-md-20, .new-col-md-21, .new-col-md-22, .new-col-md-23, .new-col-md-24 {
 	    float: left;
 	}
@@ -986,6 +998,9 @@ background: #0877BB ;
 .content-home-banner-second {
     margin-bottom: 30px;
 }
+.partner-register .partner-register-box-right,.partner-register .partner-register-box-left {
+    margin-top: 50px !important;
+}
 @media(max-width: 991px) {
 	.new-col-md-12 {
 		width: 100%;
@@ -995,6 +1010,9 @@ background: #0877BB ;
 	}
 }
 @media(max-width: 767px){
+    .features-banner {
+        min-height: 1000px !important;
+    }
 	.purchase {
 	    text-align: left;
 	}
