@@ -219,7 +219,7 @@ body .text-gray-lighter, #bizapp-footer .info-line-right a {
 }
 
 .body-lookup {
-   
+
     margin: 0;
     background: url(../images/Background-2.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -274,7 +274,7 @@ body .text-gray-lighter, #bizapp-footer .info-line-right a {
     width: 100%;
     min-height: calc(100vh - 58px - 230px);
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 }
 
 #fbarcnt {
@@ -306,13 +306,14 @@ body .text-gray-lighter, #bizapp-footer .info-line-right a {
 
 /*footer*/
 .footerTCHD {
+    overflow: hidden;
     background-color: #1967b2;
-    height: 288px;
+    height: auto;
     display: block;
 }
 
 .headFooter {
-    height: 108px;
+    height: auto;
     background-color: #1967b2;
     display: block;
     text-align: center;
@@ -341,7 +342,7 @@ body .text-gray-lighter, #bizapp-footer .info-line-right a {
     color: rgb(255, 255, 255);
     font-size: 28px;
     margin-right: 59px;
-    
+
 }
 
 .headFooterText1 {
@@ -349,7 +350,7 @@ body .text-gray-lighter, #bizapp-footer .info-line-right a {
     font-size: 18px;
     color: rgb(82, 251, 42);
     margin-right: 59px;
-    
+
 }
 
 hr {
@@ -376,14 +377,14 @@ hr {
 .p1 {
     font-size: 22px;
     color: #82929A;
-    
+
     color: rgb(82, 251, 42);
     margin-top: -4px;
 }
 
 .p2 {
     font-size: 14px;
-    
+
     color: #82929A;
     color: rgb(255, 255, 255);
     margin-top: -8px;
@@ -396,7 +397,7 @@ hr {
     color: rgb(255, 255, 255);
     padding: 12px;
     padding-left: 16px;
-    
+
     margin-top: 12px;
     text-align: justify;
 }
@@ -590,6 +591,9 @@ hr {
 .price-page .home-price .price-box-padding-first {
     padding: 0;
     z-index: 1;
+}
+#bizapp-footer #inquiry_form_id .btn-primary.submit {
+    width: 100%;
 }
 .new-col-md-1, .new-col-md-2, .new-col-md-3, .new-col-md-4, .new-col-md-5, .new-col-md-6, .new-col-md-7, .new-col-md-8, .new-col-md-9, .new-col-md-10, .new-col-md-11, .new-col-md-12, .new-col-md-13, .new-col-md-14, .new-col-md-15, .new-col-md-16, .new-col-md-17, .new-col-md-18, .new-col-md-19, .new-col-md-20, .new-col-md-21, .new-col-md-22, .new-col-md-23, .new-col-md-24 {
     position: relative;
@@ -887,13 +891,13 @@ a:hover {
 	background: #e3821d;
 }
 .btn-u.bg-blue {
-background: #0877BB ;       
+background: #0877BB ;
 }
 .btn-u.bg-blue:hover{
- background: #e3821d;   
+ background: #e3821d;
 }
 .btn-u:hover {
-background: #0877BB ;	
+background: #0877BB ;
 }
 .headline h2, .headline h3, .headline h4 {
     border-bottom: 2px solid #e3821d;
@@ -909,8 +913,11 @@ background: #0877BB ;
 }
 .price-btn-fee ~p > a {
     margin: 0 8px;
-/*}
-.price-page .price-service .btn-buy-now {
+}
+.partner-page .partner-register{
+    margin-bottom: 0 !important;
+}
+/*.price-page .price-service .btn-buy-now {
 	background: #e3821d !important;
 }
 .price-page .price-service .btn-buy-now:hover {
@@ -965,7 +972,7 @@ background: #0877BB ;
 	background: #f17f34 !important;
 }
 .btn-warning:hover, .btn-primary:hover {
-	background: #035a85 !important;	
+	background: #035a85 !important;
 	/*border: 1px solid #72c02c;*/
 /*}
 .btn-primary {
