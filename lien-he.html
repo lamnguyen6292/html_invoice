@@ -150,22 +150,21 @@
                     <h2>Đăng ký sử dụng phần mềm <span class="color-green">E</span>INVOICE</h2>
                 </div>
                 <div class="text-justify">
-                    
+
 
                     <div class="row">
                         <div class="col-md-8">
                             <form action="https://einvoice.vn/lien-he" id="formgr" method="post">                        <div class="form-horizontal padding-top-20">
-
                                 <div class="form-group">
-                                    <label for="Name" class="control-label col-md-4">Mã số thuế: <span class="red">*</span></label>
+                                    <label for="TEN_DOANH_NGHIEP" class="control-label col-md-4">Tên doanh nghiệp hoặc người liên hệ (*): </label>
                                     <div class="col-md-6">
-                                        <input type="text" autofocus data-bv-notEmpty="true" name="MST" placeholder="Nhập mã số thuế" class="form-control">
+                                        <input type="text" required name="TEN_DOANH_NGHIEP" placeholder="Nhập tên doanh nghiệp hoặc người liên hệ" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="TEN_DOANH_NGHIEP" class="control-label col-md-4">Tên doanh nghiệp: </label>
+                                    <label for="SO_DIEN_THOAI" class="control-label col-md-4">Số điện thoại (*): </label>
                                     <div class="col-md-6">
-                                        <input type="text" name="TEN_DOANH_NGHIEP" placeholder="Nhập tên doanh nghiệp" class="form-control">
+                                        <input type="text" required name="SO_DIEN_THOAI" placeholder="Nhập số điện thoại" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -175,42 +174,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="SO_DIEN_THOAI" class="control-label col-md-4">Số điện thoại: </label>
-                                    <div class="col-md-6">
-                                        <input type="text" name="SO_DIEN_THOAI" placeholder="Nhập số điện thoại" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="FAX" class="control-label col-md-4">Fax: </label>
-                                    <div class="col-md-6">
-                                        <input type="text" name="FAX" placeholder="Số fax" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-6 col-md-offset-4">
-                                        <hr />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Name" class="control-label col-md-4">Họ tên người liên hệ: <span class="red">*</span></label>
-                                    <div class="col-md-6">
-                                        <input type="text" data-bv-notEmpty="true" name="Name" placeholder="Họ tên người liên hệ" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Phone" class="control-label col-md-4">Số điện thoại: </label>
-                                    <div class="col-md-6">
-                                        <input type="text" name="Phone" placeholder="Nhập số điện thoại" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
                                     <label for="Email" class="control-label col-md-4">Email liên hệ: <span class="red">*</span></label>
                                     <div class="col-md-6">
                                         <input type="text" data-bv-notEmpty="true" data-bv-emailAddress="true" name="Email" placeholder="Nhập email liên hệ" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Content" class="control-label col-md-4">Yêu cầu khác: <span class="red">*</span></label>
+                                    <label for="Content" class="control-label col-md-4">Nội dung: <span class="red">*</span></label>
                                     <div class="col-md-8">
                                         <textarea name="Content" data-bv-notEmpty="true" cols="8" placeholder="Nhập nội dung liên hệ" class="form-control"></textarea>
                                     </div>
@@ -218,13 +188,8 @@
                                 <div class="form-group">
                                     <label class="control-label col-md-4">&nbsp;</label>
                                     <div class="col-md-8">
-
-                                        
-                                        <script type="text/javascript">
-                                            $(function () {$('#3436dd9bc3a0437a933e413571a1f16f').show();});
-                                        function ______969d1291949f43a390b0efca6700fba3________() { $('#3436dd9bc3a0437a933e413571a1f16f').hide(); $.post("/DefaultCaptcha/Refresh", { t: $('#CaptchaDeText').val() }, function(){$('#3436dd9bc3a0437a933e413571a1f16f').show();}); return false; }</script> 
                                         <br/>
-                                        <img id="CaptchaImage" src="DefaultCaptcha/Generatef300.gif?t=5b9a01c0fcd84a409ec5267670e9ab5f"/><input id="CaptchaDeText" name="CaptchaDeText" type="hidden" value="5b9a01c0fcd84a409ec5267670e9ab5f" /> <br/><a href="#CaptchaImage" id="3436dd9bc3a0437a933e413571a1f16f" onclick="______969d1291949f43a390b0efca6700fba3________()" style="display:none;">Refresh</a><br/>Nhập lại mã kiểm tra trên<br/><input autocomplete="off" autocorrect="off" data-val="true" data-val-required="Băt buộc phải nhập" id="CaptchaInputText" name="CaptchaInputText" type="text" value="" /><br/><span class="field-validation-valid" data-valmsg-for="CaptchaInputText" data-valmsg-replace="true"></span>
+                                        <img id="CaptchaImage" src="assets/images/captcha.png"/><input id="CaptchaDeText" name="CaptchaDeText" type="hidden" value="5b9a01c0fcd84a409ec5267670e9ab5f" /> <br/><a href="#CaptchaImage" id="3436dd9bc3a0437a933e413571a1f16f" onclick="______969d1291949f43a390b0efca6700fba3________()" style="display:none;">Refresh</a><br/>Nhập lại mã kiểm tra trên<br/><input autocomplete="off" autocorrect="off" data-val="true" data-val-required="Băt buộc phải nhập" id="CaptchaInputText" name="CaptchaInputText" type="text" value="" /><br/><span class="field-validation-valid" data-valmsg-for="CaptchaInputText" data-valmsg-replace="true"></span>
                                         <span class="field-validation-valid" data-valmsg-for="CaptchaInputText" data-valmsg-replace="true"></span>
                                     </div>
                                 </div>
@@ -272,7 +237,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
             <div class="row">
@@ -404,7 +369,7 @@
             <div class="container">
                 <div class="l_top">
                     <div class="col-xs-12 col-sm-3 col-md-4">
-                        <li class="e-heading" style="margin-left: 0;"> 
+                        <li class="e-heading" style="margin-left: 0;">
                             YÊU CẦU TƯ VẤN
                         </li>
                         <form id="inquiry_form_id" role="form" class="inquiry_form">
@@ -572,7 +537,7 @@
         <a href="https://plus.google.com/share?url=http://einvoice.vn" target="_blank"><img src="assets/images/sharegoogle.png" alt="Google" /></a>
         <!-- LinkedIn -->
         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://einvoice.vn" target="_blank"><img src="assets/images/sharelinkedin.png" alt="LinkedIn" /></a>
-    </div> 
+    </div>
     <script src="assets/js/respond.js"></script>
 
     <script src="assets/js/jquery-migrate.js"></script>

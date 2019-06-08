@@ -93,7 +93,7 @@ a, a:hover {
     margin-left: -15px;
 }
 #inquiry_form_id .contact-title {
-    color: #999;
+    color: #fff;
     margin-bottom: 20px;
 }
 .inquiry_form input, .inquiry_form button {
@@ -102,7 +102,7 @@ a, a:hover {
 
 }
 #inquiry_form_id label {
-    color: #999;
+    color: #fff;
     font-weight: bold;
 }
 #inquiry_form_id .btn-primary.submit {
@@ -148,7 +148,7 @@ a, a:hover {
     border-color: #0785dd !important;
 }*/
 #bizapp-footer a {
-    color: #999;
+    color: #fff;
     font-size: 14px;
     line-height: 20px;
 }
