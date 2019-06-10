@@ -8,7 +8,7 @@
     font-weight: 500;
     font-style: normal;
 }
-.sub_menu{
+.sub_menu, .sub-menu{
 	display: none;
 	width: 170px;
 	list-style: none;
@@ -23,7 +23,7 @@
 .main-menu li {
 	position: relative;
 }
-.main-menu li:hover .sub_menu {
+.main-menu li:hover .sub_menu, .main-menu li:hover .sub-menu {
 	display: block;
 	    border: 1px solid #e0e0e0;
     border-top: none;
@@ -63,11 +63,11 @@ a, a:hover {
 	font-size: 14px;
 	padding-bottom: 21px;
 }
-.sub_menu a {
+.sub_menu a, .sub-menu a {
 	display: block;
     padding: 5px 10px;
 }
-.sub_menu a:hover {
+.sub_menu a:hover, .sub-menu a:hover  {
 	color: #fff;
 	background: #f17f34;
 }
